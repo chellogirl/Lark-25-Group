@@ -1,6 +1,6 @@
 Welcome to LARK
 
->>>>>>>The Linux Activity to Reinforce Knowledge
+The Linux Activity to Reinforce Knowledge
 
 Name of game: Stranded
 
