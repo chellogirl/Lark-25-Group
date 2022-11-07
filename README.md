@@ -1,4 +1,11 @@
-# Lark-25-Group
-Lark Project for Introduction to Unix 
+Welcome to LARK
 
-Group Name: McKenzie Michael and Angelica Louis 
+>>>>>>>The Linux Activity to Reinforce Knowledge
+
+Name of game: Stranded
+
+Developed by: McKenzie Michael and Angelica Louis
+
+Narrative:-place text here-
+
+Instructions:-place text here-
