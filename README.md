@@ -1,8 +1,9 @@
-Welcome to LARK
+****Welcome to STRANDED****
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-The Linux Activity to Reinforce Knowledge
+****The Linux Activity to Reinforce Knowledge****
 
-Name of game: Stranded
+Name of game: **Stranded**
 
 Developed by: McKenzie Michael and Angelica Louis
 
