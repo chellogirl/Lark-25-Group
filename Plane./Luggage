@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "This is your luggage."
+echo "Maybe there could be something useful in here?"
+read -p "Do you want to open your luggage? y/n  " choice
+case "$choice" in
+n|no)
+echo "You dont open the luggage"
+;;
+y|yes)
+echo "You open your luggage. You find a pocket knife."
+echo "Interact with the pocket knife to add it to your inventory."
+;;
+esac
