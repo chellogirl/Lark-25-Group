@@ -1,0 +1,6 @@
+# !/bin/bash
+
+echo "You have entered a cave."
+echo "Be careful what you choose it might decided your fate."
+read -p "Choose an item in the cave" item
+
