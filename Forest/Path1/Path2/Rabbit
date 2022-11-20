@@ -3,3 +3,6 @@
 # Use food to raise your LP 
 # You need to eat at least once before the end of the game. 
 # To eat you need to cook it using a fire. 
+
+LP=20
+echo "The rabbit has $LP LP" 
