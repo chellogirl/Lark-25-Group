@@ -1,1 +1,13 @@
+# !/bin/bash
 
+Echo "This is a branch." 
+  read -p "Do you want pick this up? y/n  " choice
+  case "$choice" in
+  n|no|No|N)
+  echo "You leave the branch"
+  ;;
+  y|yes|Yes|Y)
+  echo "You pick up the branch"
+  echo "Branch2 " > Inventory
+  rm Branch
+esac
