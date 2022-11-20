@@ -1,6 +1,7 @@
 # !/bin/bash
 # This bear is in the cave blocking your path to something shiny. Maybe it's important? 
-# The Player needs a spear to effectively deafeat the bear. 
+# The Player needs a spear to effectively deafeat the bear.
 
-if [[ spear = 1 ]] 
+cat Inventory
+if [[  ]] 
 
