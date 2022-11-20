@@ -6,10 +6,10 @@ then #If the pocket knife is NOT already in the inventory, this plays
   echo "Maybe there could be something useful in here?"
   read -p "Do you want to open your luggage? y/n  " choice
   case "$choice" in
-  n|no)
+  n|no|No|N)
   echo "You dont open the luggage"
   ;;
-  y|yes|Yes|y)
+  y|yes|Yes|Y)
   echo "You open your luggage. You find a pocket knife."
   echo "A pocket knife is added to your inventory."
   echo "Pocket Knife " > Inventory
