@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if echo Inventory | grep Knife | echo $? == 1; # Checks if the pocket Knife is already in Inventory 
-then
+then #If the pocket knife is NOT already in the inventory, this plays
   echo "This is your luggage."
   echo "Maybe there could be something useful in here?"
   read -p "Do you want to open your luggage? y/n  " choice
@@ -15,7 +15,7 @@ then
   echo "Pocket Knife " > Inventory
   ;;
   esac
-else
+else #If the pocket knife is already in inventory, this plays 
    echo "The Luggage is empty" 
 fi
 
