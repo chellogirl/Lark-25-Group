@@ -1,7 +1,26 @@
-# !/bin/bash
-
-echo "You have entered a cave."
-echo "Be careful what you choose it might decided your fate."
-read -p "Choose an item in the cave" item
+#!/bin/bash
+echo "
+                    /   \              /`\       _
+\_..           /`.,/     \_         .,`   \     / \_
+    \         /            \      _/       \_  /    \     _
+     \__,.   /              \    /           \/.,   _|  _/ \
+          \_/                \  /;,.,;;\      \_ \_/  \/    \
+                           _  \/   /     ,../;,.\    _/      \
+             /           _/m\  \  /    |         \  /.,/.\   _\
+           _/           /MMmm\  \_     |          \/      \_/  \
+          /      \     |MMMMmm|   \__   \          \_       \   \_
+                  \   /MMMMMMm|      \   \           \       \    \
+                   \  |MMMMMMmm\      \___            \_      \_   \
+                    \|MMMMMMMMmm|____.;  /\_            \       \   \_
+                    /`.,___________...,,;   \            \   \        \
+                   /       \          |      \    |__     \   \_       \
+                 _/        |           \      \_     \     \    \       \_
+                /                               \     \     \_   \        \
+                                                 \     \      \   \__      \
+                                                  \     \_     \     \      \
+                                                   |      \     \     \      \
+                                                   \ms          |            \ "
+echo "Cave is completely pitch black."
+echo "Maybe it's better to return when you have obtain a light source."
 
 # The player will not be able to enter the cave until they have a torch (to create a torch they need a "sturdy branch" and "fire")
