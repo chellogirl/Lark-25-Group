@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if echo Inventory | grep Knife | echo $? == 1; ##Checks if the pocket Knife is already in Inventory 
+if echo Inventory | grep Knife | echo $? == 1; # Checks if the pocket Knife is already in Inventory 
 then
   echo "This is your luggage."
   echo "Maybe there could be something useful in here?"
