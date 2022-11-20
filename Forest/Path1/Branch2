@@ -9,5 +9,5 @@ Echo "This is a branch."
   y|yes|Yes|Y)
   echo "You pick up the branch"
   echo "Branch2 " >> Inventory
-  rm Branch
+  rm Branch2
 esac
