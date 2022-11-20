@@ -1,0 +1,10 @@
+# !/bin/bash
+
+FILELOCATION=$PWD
+
+function resetVar()
+{
+        bear="no"
+        fire="no"
+        boat="no"
+        playerWin="no"
