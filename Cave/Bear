@@ -3,5 +3,9 @@
 # The Player needs a spear to effectively deafeat the bear.
 
 cat Inventory
-if [[  ]] 
+if [[ Inventor | grep "spear" ]]
+echo " It is time to fight the bear."
+echo "The bear will determine if you live or die."
+
+
 
