@@ -7,5 +7,10 @@ if [[ Inventor | grep "spear" ]]
 echo " It is time to fight the bear."
 echo "The bear will determine if you live or die."
 
+read -p "The bear has 4 lifes. In order to kill the bear you have to kill all 4 lives." 
 
-
+if [[ bear == "attack" ]] 
+  life --
+else
+  life ++
+fi 
