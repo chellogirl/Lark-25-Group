@@ -9,6 +9,7 @@ echo "You dont open the luggage"
 ;;
 y|yes)
 echo "You open your luggage. You find a pocket knife."
-echo "Interact with the pocket knife to add it to your inventory."
+echo "A pocket knife is added to your inventory."
+echo "Pocket Knife " > Inventory
 ;;
 esac
