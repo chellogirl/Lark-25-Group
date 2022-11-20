@@ -8,6 +8,6 @@ Echo "This is a branch."
   ;;
   y|yes|Yes|Y)
   echo "You pick up the branch"
-  echo "Branch " > Inventory
+  echo "Branch " >> Inventory
   rm Branch
 esac
