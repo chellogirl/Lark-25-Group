@@ -10,19 +10,25 @@ do
 echo "The Bear has $BearLP left."
 echo "You have $LP left"
 
-read -p "What do you want to attack the bear with?\n 1. Knife \n 2. Spear " weapon
+read -p "What do you want to attack the bear with?
+1. Knife 
+2. Spear " weapon
 case "$weapon" in
 
 1)
 BearLP=$(( $BearLP - 50 ))
-echo "You attacked the bear using the spear"
+echo "You attacked the bear using the spear. It lost 50 HP."
 ;;
 2)
 BearLP=$(( $BearLP - 10 ))
-echo "You attacked the bear using the spear"
+echo "You attacked the bear using the knife.It lost 10 HP."
 ;;
 esac
 
-echo "The bear has attacked you! You've lost 15 LP"
+echo "The bear has attacked you! You've lost 15 HP"
 LP=$(( $LP - 15 ))
 done
+
+echo "You've defeated the bear!" 
+
+
