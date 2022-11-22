@@ -1,6 +1,21 @@
 # !/bin/bash
-# This bear is in the cave blocking your path to something shiny. Maybe it's important? 
-# I still need to add in the requirement of the spear && the game over if they lose all their health
+# I still need to add in the requirement of the spear && the game over if they lose all their health 
+
+echo "
+     (()__(()
+     /       \ 
+    ( /    \  \
+     \ o o    /
+     (_()_)__/ \             
+    / _,==.____ \
+   (   |--|      )
+   /\_.|__|'-.__/\_
+  / (        /     \ 
+  \  \      (      /
+   )  '._____)    /    
+(((____.--(((____/
+"
+echo "This bear is in the cave blocking your path to something shiny. Maybe it's important? " 
 
 LP=100
 BearLP=100
