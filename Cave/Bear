@@ -10,9 +10,7 @@ do
 echo "The Bear has $BearLP left."
 echo "You have $LP left"
 
-read -p echo "What do you want to attack the bear with?
- 1. Knife
- 2. Spear " weapon
+read -p echo "What do you want to attack the bear with? \n 1. Knife \n 2. Spear " weapon
 case "$weapon" in
 
 1)
