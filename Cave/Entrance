@@ -20,6 +20,8 @@ echo "
                                                   \     \_     \     \      \
                                                    |      \     \     \      \
                                                    \ms          |            \ "
+                                                   
+# Test if they have a torch, if they dont, display this text                                                 
 echo "Cave is completely pitch black."
 echo "Maybe it's better to return when you have obtain a light source."
 
