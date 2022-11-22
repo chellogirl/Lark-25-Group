@@ -12,12 +12,46 @@ ehco "
     ,_/   ,    \/\_
     \_|    )_-\ \_-`
        `-----` `--`  "
-echo "A rabbit has appeared!"        
-       
+echo "A rabbit has appeared!"           
 
+LP=100
+rabbitLP=20
+echo "The rabbit has $rabbitLP LP" 
 
+while [ $rabbitLP -gt 0 ]
+## if LP -le 0 GAME OVER!! 
+do
+echo "The Rabbit has $rabbitLP left."
+echo "You have $LP left"
 
-LP=20
-echo "The rabbit has $LP LP" 
+#add smth here confirming they have a knife && spear
+read -p "What do you want to attack the rabbit with?
+1. Spear 
+2. Knife " weapon
+case "$weapon" in
 
+1)
+rabbitLP=$(( $rabbitLP - 50 ))
+echo "You attacked the rabbit using the spear. It lost 50 HP."
+;;
+2)
+rabbitLP=$(( $rabbitLP - 10 ))
+echo "You attacked the rabbit using the knife.It lost 10 HP."
+;;
+*) 
+echo "Please enter a number corresponding to the weapon you want to use."
+;;
+esac
+
+echo "The rabbit has attacked you! You've lost 15 HP"
+LP=$(( $LP - 15 ))
+done
+
+echo "
+╔═╗╦ ╦╔═╗╔═╗╔═╗╔═╗╔═╗┬
+╚═╗║ ║║  ║  ║╣ ╚═╗╚═╗│
+╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝o "
+echo "You've defeated the rabbit!" 
+echo "Raw Meat has been added to your Inventory." 
 echo "Raw Meat" > Inventory 
+rm rabbit
