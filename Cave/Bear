@@ -1,14 +1,30 @@
 # !/bin/bash
 # This bear is in the cave blocking your path to something shiny. Maybe it's important? 
-# The Player needs a spear to effectively deafeat the bear.
+# I still need to add in the requirement of the spear && the game over if they lose all their health
 
-cat Inventory
-if [[ Inventor | grep "spear" ]]
-echo " It is time to fight the bear."
-echo "The bear will determine if you live or die."
+LP=100
+BearLP=100
 
-read -p "The bear has 4 lifes. In order to kill the bear you have to kill all 4 lives."  lives 
+while [$BearLP -gt 0 ]
+do
+echo "The Bear has $BearLP left."
+echo "You have $LP left"
 
-bear = 4 lifes
- 
-human = 5 life
+read -p echo "What do you want to attack the bear with?
+ 1. Knife
+ 2. Spear " weapon
+case "$weapon" in
+
+1)
+$BearLP-=50
+echo "You attacked the bear using the spear"
+;;
+2)
+$BearLP-=10
+echo "You attacked the bear using the spear"
+;;
+esac
+
+echo "The bear has attacked you! You've lost 15 LP"
+LP-=15
+done
