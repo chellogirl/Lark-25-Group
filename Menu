@@ -24,7 +24,7 @@ function resetVar()
 }
 
 # save screen 
----Replace me-------
+tput smcup
 
 # Display menu until selection == 0
 	while [[ $REPLY != 0 ]]; do
@@ -78,7 +78,7 @@ read -p "Enter selection [0-2} > " selection
     done
  
 # Restore saved screen
----Replace me-------------
+tput rmcup
 echo "Program terminated."
 
 
