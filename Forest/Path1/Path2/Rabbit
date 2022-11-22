@@ -3,6 +3,21 @@
 # Use food to raise your LP 
 # You need to eat at least once before the end of the game. 
 # To eat you need to cook it using a fire. 
+ehco "
+             ,\
+             \\\,_
+              \` ,\
+         __,.-  =__)
+       .         )
+    ,_/   ,    \/\_
+    \_|    )_-\ \_-`
+       `-----` `--`  "
+echo "A rabbit has appeared!"        
+       
+
+
 
 LP=20
 echo "The rabbit has $LP LP" 
+
+echo "Raw Meat" > Inventory 
