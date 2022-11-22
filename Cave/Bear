@@ -40,7 +40,11 @@ echo "You attacked the bear using the spear. It lost 50 HP."
 BearLP=$(( $BearLP - 10 ))
 echo "You attacked the bear using the knife.It lost 10 HP."
 ;;
+*) 
+echo "Please enter a number corresponding to the weapon you want to use."
+;;
 esac
+
 
 echo "The bear has attacked you! You've lost 15 HP"
 LP=$(( $LP - 15 ))
