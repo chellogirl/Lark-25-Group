@@ -5,24 +5,24 @@
 LP=100
 BearLP=100
 
-while [$BearLP -gt 0 ]
+while [ $BearLP -gt 0 ]
 do
 echo "The Bear has $BearLP left."
 echo "You have $LP left"
 
-read -p echo "What do you want to attack the bear with? \n 1. Knife \n 2. Spear " weapon
+read -p "What do you want to attack the bear with?\n 1. Knife \n 2. Spear " weapon
 case "$weapon" in
 
 1)
-$BearLP-=50
+$BearLP=$(( $BearLP - 50 ))
 echo "You attacked the bear using the spear"
 ;;
 2)
-$BearLP-=10
+$BearLP=$(( $BearLP - 10 ))
 echo "You attacked the bear using the spear"
 ;;
 esac
 
 echo "The bear has attacked you! You've lost 15 LP"
-LP-=15
+$LP=$(( $LP - 15 ))
 done
