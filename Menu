@@ -1,52 +1,52 @@
 # !/bin/bash
 
-# tputMenu.sh: a menu driven system information program 
+# tputMenu.sh: a menu driven system information program
 
-# creat dat file if it does not exist 
-	if [ ! -f ./currentPlayer.dat ]
-		then echo "placeholder" > ./currentPlayer.dat
-			echo "Created currentPlayer.dat"
-			sleep 2;
-	fi
+# creat dat file if it does not exist
+        if [ ! -f ./currentPlayer.dat ]
+                then echo "placeholder" > ./currentPlayer.dat
+                        echo "Created currentPlayer.dat"
+                        sleep 2;
+        fi
 
 # set color variables
-	
-	BG_CYAN="$(tput setab 6)"
-	BG_BLACK="$(tput setab 0)"
-	FG_WHITE="$(tput setaf 7)"
-	FG_BLACK="$(tput setaf 0)"
 
-function resetVar() 
+        BG_CYAN="$(tput setab 6)"
+        BG_BLACK="$(tput setab 0)"
+        FG_WHITE="$(tput setaf 7)"
+        FG_BLACK="$(tput setaf 0)"
+
+function resetVar()
 {
-	echo "Resetting Lark environment for new game, $username "
-	sleep 2
-	# this is where you could reset varibale for new game play
+        echo "Resetting Lark environment for new game, $username "
+        sleep 2
+        # this is where you could reset varibale for new game play
 }
 
-# save screen 
-tput smcup
+# save screen
+---Replace me-------
 
 # Display menu until selection == 0
-	while [[ $REPLY != 0 ]]; do
-		echo -n ${BG_CYAN} ${FG_BLACK}
-		clear
+        while [[ $REPLY != 0 ]]; do
+                echo -n ${BG_CYAN} ${FG_BLACK}
+                clear
 
-#cat user input of a here document 
-	cat <<EOF
-		Please Select:
-		
-		1. Log into Lark game
-		2. Start L.A.R.K game script 
-		0. Quit
+#cat user input of a here document
+        cat <<EOF
+                Please Select:
+
+                1. Log into Lark game
+                2. Start L.A.R.K game script
+                0. Quit
 EOF
 
-read -p "Enter selection [0-2} > " selection 
-	
-	# Clear area beneath menu
-	tput cup 10 0 # position the cursoe 
-	echo -n ${BG_BLACK}${FG_WHITE}
-	tput ed # Clears cursor to end of the line
-	tput cup 110
+read -p "Enter selection [0-2} > " selection
+
+        # Clear area beneath menu
+        tput cup 10 0 # position the cursoe
+        echo -n ${BG_BLACK}${FG_WHITE}
+        tput ed # Clears cursor to end of the line
+        tput cup 110
 # Act on selection
       case $selection in
         1)  read -p "What is your name? " userName
@@ -61,11 +61,12 @@ read -p "Enter selection [0-2} > " selection
             ;;
         2)  if [ new ]
                then resetVar # resets game variables and settings
-              echo " Welcome to Lark" ; sleep 1
+               tput bold; echo -e "\nWelcome to Lark\n" ;tput sgr0 bold mode
+               sleep 1;
             fi
             # run start up script
-              echo "Lark is starting now $userName";sleep 1
-              # source ./someLarkStartScript.sh
+              echo -e  "Lark is starting now $userName\n";sleep 1
+              cat ./GameStart.sh
             break
             ;;
         0)  break
@@ -76,9 +77,6 @@ read -p "Enter selection [0-2} > " selection
       printf "\n\nPress any key to continue."
       read -n 1
     done
- 
+
 # Restore saved screen
-tput rmcup
 echo "Program terminated."
-
-
