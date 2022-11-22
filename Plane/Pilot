@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dialouge=0
+#Test if this is the first time they've talked, if it is display this.... 
 echo "
         _.---._
      .- ((O))  -.
@@ -23,3 +23,22 @@ echo "So you're awake... "
 echo "We were struck by lighting and one of the plane's wings was hit."
 echo "I've taken the liberty of looking around, this island is deserted."
 echo "We need to find a way off this island but, lets start with finding something to eat."
+
+#Test they have a rabbit AND fire, if they do display this: 
+
+echo "You've got a rabbit!" 
+echo "And we've made a fire" 
+echo "Now we can cook this and not starve."
+#make a food file that if they interact with it they can eat, if they dont eat once in the game they starve even if they make the boat
+
+#test here if they only have a rabbit 
+
+#test here if they only have a fire
+
+#test here if they have branch && branch2 && branch3
+
+#test here if they have a sturdy branch ONLY 
+
+#test here if they have a sturdy branch and a fire 
+
+
