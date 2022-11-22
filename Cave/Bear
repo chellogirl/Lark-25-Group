@@ -21,12 +21,14 @@ LP=100
 BearLP=100
 
 while [ $BearLP -gt 0 ]
+## if LP -le 0 GAME OVER!! 
 do
 echo "The Bear has $BearLP left."
 echo "You have $LP left"
 
+#add smth here confirming they have a knife && spear
 read -p "What do you want to attack the bear with?
-1. Spear
+1. Spear 
 2. Knife " weapon
 case "$weapon" in
 
@@ -44,6 +46,11 @@ echo "The bear has attacked you! You've lost 15 HP"
 LP=$(( $LP - 15 ))
 done
 
+echo "
+╔═╗╦ ╦╔═╗╔═╗╔═╗╔═╗╔═╗┬
+╚═╗║ ║║  ║  ║╣ ╚═╗╚═╗│
+╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝o "
 echo "You've defeated the bear!" 
-
+echo "You can now enter the cave." 
+#Add smth here allowing the to enter the cave 
 
