@@ -26,8 +26,8 @@ echo "The Bear has $BearLP left."
 echo "You have $LP left"
 
 read -p "What do you want to attack the bear with?
-1. Knife 
-2. Spear " weapon
+1. Spear
+2. Knife " weapon
 case "$weapon" in
 
 1)
