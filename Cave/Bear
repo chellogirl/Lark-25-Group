@@ -33,6 +33,7 @@ read -p "What do you want to attack the bear with?
 case "$weapon" in
 
 1)
+#If grep -q "Spear" Inventory; [ $? -eq 0 ] && echo "yes" || echo "no"
 BearLP=$(( $BearLP - 50 ))
 echo "You attacked the bear using the spear. It lost 50 HP."
 ;;
