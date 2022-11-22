@@ -55,9 +55,10 @@ read -p "Enter selection [0-2} > " selection
                  echo "Welcome back $userName"
                  sleep 2
              else
-               echo $userName > ./currentPlayer.dat
+               echo -e $userName \n > ./currentPlayer.dat
                new=true
             fi
+                cat ./GameStart.sh
             ;;
         2)  if [ new ]
                then resetVar # resets game variables and settings
