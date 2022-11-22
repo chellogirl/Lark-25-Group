@@ -14,15 +14,15 @@ read -p "What do you want to attack the bear with?\n 1. Knife \n 2. Spear " weap
 case "$weapon" in
 
 1)
-$BearLP=$(( $BearLP - 50 ))
+BearLP=$(( $BearLP - 50 ))
 echo "You attacked the bear using the spear"
 ;;
 2)
-$BearLP=$(( $BearLP - 10 ))
+BearLP=$(( $BearLP - 10 ))
 echo "You attacked the bear using the spear"
 ;;
 esac
 
 echo "The bear has attacked you! You've lost 15 LP"
-$LP=$(( $LP - 15 ))
+LP=$(( $LP - 15 ))
 done
