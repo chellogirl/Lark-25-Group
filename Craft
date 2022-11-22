@@ -20,11 +20,15 @@ echo "You used a sturdy branch and fire to make a torch."
 echo "Torch" > Inventory
 #else
 echo "You're missing some items needed to create a fire"
+;;
 3)
 #test if they have sturdy branch && pocket knife, if they do
 echo "You used a sturdy branch and your pocket knife to make a spear" 
 echo "Spear" > Inventory
 #else 
 echo "You're missing some items needed to create a spear."
+;;
 *) 
 echo "Please enter one of the numbers" 
+;;
+esac
