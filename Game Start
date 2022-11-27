@@ -11,8 +11,8 @@ cd - Changes your location
 ./ - to interact with an object 
 ls -  to look around at your surroundings in an area
 cat - to open your Inventory 
-Pwd - check the your current location
-Echo - to add an item into your Inventory
+PWD - check the your current location
+echo - to add an item into your Inventory
 rm - to throw out and object 
 Date - 
 grep - to search for a specific item 
