@@ -15,7 +15,7 @@ ehco "
 echo "A rabbit has appeared!"           
 
 LP=100
-rabbitLP=20
+rabbitLP=50
 echo "The rabbit has $rabbitLP LP" 
 
 while [ $rabbitLP -gt 0 ]
