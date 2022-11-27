@@ -22,6 +22,7 @@ echo "
 ⠀⠀⠀⠀⠀⠀⠀⠈⠁⠉⠉⠀⠁⠀⠀⠀⠀⠀⠀⠉⠙⠻⠿⠿⠿⠿⠿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 "
 echo "This bear is in the cave blocking your path to something shiny. Maybe it's important? " 
+echo " Press CTRL Z to escape!"
 
 LP=100
 BearLP=100
@@ -39,13 +40,22 @@ read -p "What do you want to attack the bear with?
 case "$weapon" in
 
 1)
-#If grep -q "Spear" Inventory; [ $? -eq 0 ] && echo "yes" || echo "no"
+if grep -q "Spear" Inventory; [ $? -eq 0 ]
+then
 BearLP=$(( $BearLP - 50 ))
 echo "You attacked the bear using the spear. It lost 50 HP."
+else
+echo "You do not have a spear"
+fi
 ;;
 2)
+if grep -q "Knife" Inventory; [ $? -eq 0 ]
+then
 BearLP=$(( $BearLP - 10 ))
 echo "You attacked the bear using the knife.It lost 10 HP."
+else 
+echo "You do not have a knife."
+fi
 ;;
 *) 
 echo "Please enter a number corresponding to the weapon you want to use."
