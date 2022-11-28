@@ -7,6 +7,7 @@ Name of game: **Stranded**
 
 Developed by: McKenzie Michael and Angelica Louis
 
-Narrative:-place text here-
+Narrative:
 
-Instructions:-place text here-
+
+Instructions: 
