@@ -23,7 +23,7 @@ Echo "This is a branch."
 ⠀⠀⢀⣀⣈⠙⣿⡿⠟⠁⠀⠀⠀⠀⠀⠙⢷⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠘⢿⣿⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-  echo "You pick up the branch"
-  echo "Branch " >> Inventory
+
+  type "echo \"Branch \" >> Inventory"
   rm Branch
 esac
