@@ -15,6 +15,7 @@ if [ $LP -le 0 ]
 then
 cat .GameOver
 tset
+./menu
 break
 else
 echo "The Bear has $BearLP left."
