@@ -19,8 +19,9 @@
 function resetVar()
 {
         echo "Resetting Lark environment for new game, $username "
-        sleep 2
-        # this is where you could reset varibale for new game play
+        sleep 1
+        LP=0
+        
 }
 
 # save screen
@@ -68,6 +69,7 @@ read -p "Enter selection [0-2} > " selection
             # run start up script
               echo -e  "Lark is starting now $userName\n";sleep 1
               cat ./GameStart.sh
+              cd Lark-25-Group
             break
             ;;
         0)  break
