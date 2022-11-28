@@ -23,6 +23,8 @@ function resetVar()
         LP=0
         
 }
+currPath=$(pwd)
+$PWD=Lark-25-Group
 
 # save screen
 ---Replace me-------
@@ -60,6 +62,7 @@ read -p "Enter selection [0-2} > " selection
                new=true
             fi
                 cat GameStart.sh
+                cd $PWD
             ;;
         2)  if [ new ]
                then resetVar # resets game variables and settings
@@ -69,7 +72,7 @@ read -p "Enter selection [0-2} > " selection
             # run start up script
               echo -e  "Lark is starting now $userName\n";sleep 1
               cat GameStart
-              cd Lark-25-Group
+               cd $PWD
             break
             ;;
         0)  break
