@@ -14,7 +14,10 @@ echo "
     ^^^^      ^^^^     ^^^    ^^
          ^^^^      ^^^  "
 
-if [[ part_1 && part_2 && part_3 ]] 
-echo "You can access the boat now"
-echo "The boat is repaired now"
-echo "Now you can esacpe the island"
+if grep -q "Parts_1" Inventory; [ $? -eq 0 ] && grep -q "Parts_2" Inventory; [ $? -eq 0 ] && grep -q "Parts_2" Inventory; [ $? -eq 0 ]
+then
+echo "The boat is now repaired."
+cat .GameWin
+else 
+echo "You still need parts to fix the boat." 
+fi
