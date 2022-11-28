@@ -52,6 +52,6 @@ echo "
 ╚═╗║ ║║  ║  ║╣ ╚═╗╚═╗│
 ╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝o "
 echo "You've defeated the rabbit!" 
-echo "Raw Meat has been added to your Inventory." 
-echo "Raw Meat" > Inventory 
+echo "The Rabbit dropped Raw Meat!" 
+echo "Type echo \"Raw Meat\" > Inventory "
 rm rabbit
