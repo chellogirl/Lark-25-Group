@@ -1,1 +1,7 @@
-"This is one of the parts needed to fix the boat." 
+#!/bin/bash
+
+echo "This is an Engine from your plane" 
+echo "It remains mostly intact. Probably since it was the plane's wings that got hit and not the engine."
+echo "Still it's a little surprising it wasn't damaged during the crash"
+echo "It might be useful in the future. Maybe you should take it with you? 
+echo " type echo \"Parts_1\" >> Inventory to add the Engine to you're Inventory."
