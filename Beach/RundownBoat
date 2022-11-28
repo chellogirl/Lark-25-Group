@@ -22,7 +22,7 @@ read -p "Do you want to fix the boat?
 case "$fix" in
 
 1)
-if grep -q "Parts_1" Inventory; [ $? -eq 0 ] && grep -q "Parts_2" Inventory; [ $? -eq 0 ] && grep -q "Parts_2" Inventory; [ $? -eq 0 ]
+if grep -q "Parts_1" Inventory; [ $? -eq 0 ] && grep -q "Parts_2" Inventory; [ $? -eq 0 ] && grep -q "Parts_3" Inventory; [ $? -eq 0 ]
 then
 echo "The boat is now repaired."
 cat .GameWin
