@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "What do you want to make?"
-read -p echo "
+read -p 
   1. Fire
   2. Torch
-  3. Spear " decision
+  3. Spear  decision
 case "$decision" in
 
 1)
