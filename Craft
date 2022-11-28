@@ -8,8 +8,9 @@ read -p The chpices are:
 case "$decision" in
 
 1)
-if [[ echo Inventory | grep -w 'branch| branch2 | branch3' ]]
+if grep -q "Branch" Inventory; [ $? -eq 0 ] && if grep -q "Branch2" Inventory; [ $? -eq 0 ] && if grep -q "Branch3" Inventory; [ $? -eq 0 ]
 #Test if they have branch && branch2 && branch 3, if they do
+then
 echo "You used 3 branches to create a fire."
 echo "Fire" >Inventory
 #add smth here to rm the branches from their inventory
@@ -19,7 +20,8 @@ fi
 ;;
 2)
 #Test if they have a sturdy branch && a fire, if they do
-if [[ echo Inventory | grep -w 'sturdy branch | fire' ]]
+if grep -q "Sturdy" Inventory; [ $? -eq 0 ] && if grep -q "Fire" Inventory; [ $? -eq 0 ]
+then
 echo "You used a sturdy branch and fire to make a torch."
 echo "Torch" > Inventory
 #add smth here to rm the branch from inv
@@ -28,8 +30,9 @@ echo "You're missing some items needed to create a fire"
 fi
 ;;
 3)
-if [[ echo Inventory | grep -w 'sturdy branch | pocket knife' ]]
+if grep -q "Sturdy" Inventory; [ $? -eq 0 ] && if grep -q "Knife" Inventory; [ $? -eq 0 ]
 #test if they have sturdy branch && pocket knife, if they do
+then
 echo "You used a sturdy branch and your pocket knife to make a spear" 
 echo "Spear" > Inventory
 #add smth here to rm the branch from inv
