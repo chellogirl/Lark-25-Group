@@ -2,7 +2,21 @@
 
 # I still need to add in the requirement of the spear && the game over if they lose all their health
 
-echo ""
+echo "
+          _  ,-.
+         (,-/)  )
+         /      \
+      o-' 9      ;
+      \         /
+       `-.     (
+       ,'/  ,--.;
+,-. _,','  /   ||
+|  (  / _,'    /|
+>-. `( (    _,' |
+|  \_.--`~~' `.  )
+|             ;-'
+`.__,.      ,'
+      `----' "
 echo "This bear is in the cave blocking your path to something shiny. Maybe it's important? "
 echo " Press CTRL Z to escape!"
 
