@@ -20,7 +20,7 @@ function resetVar()
 {
         echo "Resetting Lark environment for new game, $username "
         sleep 1
-        LP=0
+       
         
 }
 currPath=$(pwd)
