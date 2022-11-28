@@ -1,41 +1,26 @@
 # !/bin/bash
 
-# I still need to add in the requirement of the spear && the game over if they lose all their health 
+# I still need to add in the requirement of the spear && the game over if they lose all their health
 
-echo "
-     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⠶⣶⣴⣶⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⠀⠀⠀⢀⣀⣤⣤⣄⣄⣀⣸⣟⣾⡿⠛⠀⠀⠀⠀⠙⣿⣇⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⡴⠛⠋⠛⠋⠉⠙⠛⠛⠿⡛⠛⠉⠉⠉⠉⢽⣿⠿⣿⡿⠃⠀⠀⢠⣶⣤⠀⠘⢿⣇⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⣠⣾⠏⠁⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠁⠀⠀⠀⠀⠠⠿⡋⠀⢾⡇⠀⠀⠀⠈⠙⠋⠀⠀⢰⣿⣿⣦⠀⠀
-⠀⠀⠀⠀⣠⡾⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡏⠀⠀⠀⠀⠀⢠⣾⠄⠀⢬⠃⠀⠀⠀⠀⠀⠀⢶⣤⣀⣹⣯⡿⠀⠀
-⠀⠀⠀⢰⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣦⠀⠀⠀⠀⠈⠻⣧⠀⠈⠙⢶⣷⣤⣤⣠⡶⠿⣿⣿⣿⡯⠀⠀⠀
-⠀⠀⢼⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠙⢳⡶⡆⠀⠈⢙⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⢾⡇⠀⠀⠀⠀⠀⢶⣄⠀⠀⠀⠀⠀⠀⣤⣿⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⢶⣴⡾⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⢸⡇⠀⠀⠀⠀⠀⠈⣿⡇⠀⠀⠀⠀⠀⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⢸⣿⠆⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣴⣶⡾⠛⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠈⣿⡇⠀⠀⠀⠀⠀⣿⣧⣤⣄⣀⣀⡀⠘⣷⠀⠀⠀⠀⠀⠀⢰⣷⣿⠉⠀⠀⢿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⣸⡿⠀⠀⠀⠀⠀⢀⡿⠈⢿⣟⠛⠻⠿⠿⢻⣶⠀⠀⠀⠀⠀⣼⣷⠛⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⣿⠆⠀⠀⠀⠀⠀⣿⡇⠀⠈⢻⣆⠀⠀⠀⣼⠗⠀⠀⠀⠀⠀⣿⣇⠀⠀⠀⠀⣼⣟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⢿⡆⠀⠀⠀⠀⠀⠻⣷⣄⢀⣨⣿⣄⠀⠀⣿⠁⠀⠀⠀⠀⣼⠏⣿⠀⠀⠀⠀⠈⠛⢶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠘⣿⣇⣀⠀⠀⠀⠀⠈⢻⡿⠟⠷⠁⠀⠀⣿⡄⠀⠀⠀⠀⠻⣯⣿⣦⣤⣀⣀⣀⣠⣼⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠈⠙⠻⢷⣶⣤⣶⣶⣿⡿⠆⠀⠀⠀⠀⠹⣿⣄⠀⠀⠀⠀⢀⣿⣌⠉⠉⠉⠛⠋⠉⠁⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠈⠁⠉⠉⠀⠁⠀⠀⠀⠀⠀⠀⠉⠙⠻⠿⠿⠿⠿⠿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-"
-echo "This bear is in the cave blocking your path to something shiny. Maybe it's important? " 
+echo ""
+echo "This bear is in the cave blocking your path to something shiny. Maybe it's important? "
 echo " Press CTRL Z to escape!"
 
 LP=100
 BearLP=100
 
 while [ $BearLP -gt 0 ]
-## if LP -le 0 GAME OVER!! 
 do
+if [ $LP -le 0 ]
+then
+cat .GameOver
+else
 echo "The Bear has $BearLP left."
 echo "You have $LP left"
 
 #add smth here confirming they have a knife && spear
 read -p "What do you want to attack the bear with?
-1. Spear 
+1. Spear
 2. Knife " weapon
 case "$weapon" in
 
@@ -53,11 +38,11 @@ if grep -q "Knife" Inventory; [ $? -eq 0 ]
 then
 BearLP=$(( $BearLP - 10 ))
 echo "You attacked the bear using the knife.It lost 10 HP."
-else 
+else
 echo "You do not have a knife."
 fi
 ;;
-*) 
+*)
 echo "Please enter a number corresponding to the weapon you want to use."
 ;;
 esac
@@ -65,13 +50,14 @@ esac
 
 echo "The bear has attacked you! You've lost 15 HP"
 LP=$(( $LP - 15 ))
+fi
 done
 
 echo "
 ╔═╗╦ ╦╔═╗╔═╗╔═╗╔═╗╔═╗┬
 ╚═╗║ ║║  ║  ║╣ ╚═╗╚═╗│
 ╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝o "
-echo "You've defeated the bear!" 
-echo "You can now enter the cave." 
-#Add smth here allowing the to enter the cave 
+echo "You've defeated the bear!"
+echo "You can now enter the cave."
 
+#Add smth here allowing the to enter the cave
