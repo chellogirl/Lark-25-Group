@@ -20,25 +20,17 @@ echo "
     /)_/   |    |  "
 
 echo "So you're awake... "
-echo "We were struck by lighting and one of the plane's wings was hit."
-echo "I've taken the liberty of looking around, this island is deserted."
+echo "You must be distressed but worry not!" 
+echo "We were struck by lighting and one of the plane's wings was hit. Causing us to crash!!"
+echo "I've taken the liberty of looking around a but, it seems this island is completely deserted." 
+echo " Thats right! HO HO HO! We are STRANDED!" 
 echo "We need to find a way off this island but, lets start with finding something to eat."
+echo "I suggest looking looking the forest."
 
 #Test they have a rabbit AND fire, if they do display this: 
-
 echo "You've got a rabbit!" 
 echo "And we've made a fire" 
 echo "Now we can cook this and not starve."
 #make a food file that if they interact with it they can eat, if they dont eat once in the game they starve even if they make the boat
-
-#test here if they only have a rabbit 
-
-#test here if they only have a fire
-
-#test here if they have branch && branch2 && branch3
-
-#test here if they have a sturdy branch ONLY 
-
-#test here if they have a sturdy branch and a fire 
 
 
