@@ -68,7 +68,7 @@ read -p "Enter selection [0-2} > " selection
             fi
             # run start up script
               echo -e  "Lark is starting now $userName\n";sleep 1
-              cat ./GameStart.sh
+              cat GameStart
               cd Lark-25-Group
             break
             ;;
