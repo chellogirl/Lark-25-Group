@@ -1,6 +1,5 @@
 # !/bin/bash
 
-
 Echo "This is a branch." 
   read -p "Do you want pick this up? y/n  " choice
   case "$choice" in
