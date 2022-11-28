@@ -14,12 +14,7 @@ You come to still in the plane buckled to your seat. You look around but no one 
 
 Instructions: 
 Commands:
-1. cd - Changes your location 
-2. chmod u+x - allows you to interact with object (ONLY works on objects)
-3. ./ - to interact with an object / talk to someone
-4. ls -  to look around at your surroundings in an area
-5. cat - to open your Inventory / Observe an area
-6. pwd - check the your current location
-7. echo - to add an item into your Inventory
-8. rm - to throw out and object 
-9. type 'cat commands' to view the instructions again
+1. cd Lark-25-Group
+2. change the permission using chmod +x to access the Menu 
+3. Open the Menu 
+4. After the introduction, type ls
