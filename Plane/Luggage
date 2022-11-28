@@ -9,8 +9,7 @@
   ;;
   y|yes|Yes|Y)
   echo "You open your luggage. You find a pocket knife."
-  echo "A pocket knife is added to your inventory."
-  echo "Pocket Knife " > Inventory
+  echo " type echo \"Pocket Knife\" >> Inventory to pick up the knife"
   rm luggage2
   
 esac
