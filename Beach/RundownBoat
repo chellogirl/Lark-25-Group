@@ -1,7 +1,7 @@
 # !/bin/bash
 # This will be a boat you can use to escape the island and win the game.
-# To repair this boat you will need to gather several different items 
-# 1 item will be found on the plane. Another be in the forest and another in the cave. 
+# To repair this boat you will need to gather several different items
+# 1 item will be found on the plane. Another be in the forest and another in the cave.
 
 echo "
               |    |    |
@@ -13,25 +13,28 @@ echo "
   ^^^^^ ^^^^^^^^^^^^^^^^^^^^^
     ^^^^      ^^^^     ^^^    ^^
          ^^^^      ^^^  "
-         
+
 echo " There is a boat here. Maybe you can use it to escape the island."
-echo "That is, if it wasn't broken beyond repair..." 
+echo "That is, if it wasn't broken beyond repair..."
 read -p "Do you want to fix the boat?
 1. Yes
 2. No "  fix
 case "$fix" in
 
 1)
-if grep -q "Parts_1" Inventory; [ $? -eq 0 ] && grep -q "Parts_2" Inventory; [ $? -eq 0 ] && grep -q "Parts_3" Inventory; [ $? -eq 0 ]
+if grep -q "Parts_1" Inventory; [ $? -eq 0 ] && grep -q "Parts_2" Inventory; [ $? -eq 0 ] && grep -q "Parts_2" Inventory; [ $? -eq 0 ]
 then
 echo "The boat is now repaired."
 cat .GameWin
 tset
-else 
-echo "You still need parts to fix the boat." 
+else
+echo "You still need parts to fix the boat."
 fi
-2) 
-echo "Yea you probably can't fix this boat anyways..." 
-*) 
-echo "Please choose a valid response." 
-
+;;
+2)
+echo "Yea you probably can't fix this boat anyways..."
+;;
+*)
+echo "Please choose a valid response."
+;;
+esac
