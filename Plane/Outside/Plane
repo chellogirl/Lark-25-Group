@@ -7,9 +7,9 @@ echo "            _\ _~-\___
                       `---~~\___________/------------`````
                       =  ===(_________D " 
 sleep 1
-echo "There are ruins of the plane." 
+echo "You see are ruins of the plane." 
 sleep 1
-echo "It's in bad shape. It's a miracle it hasn't blown up."
+echo "It's in terrible shape. Now that you're looking from the outside it's in worse shape then you realized.It's a miracle it hasn't blown up."
 sleep 3 
 echo "Maybe you shouldn't Jinx it though." 
 sleep 1 
