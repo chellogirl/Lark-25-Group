@@ -14,7 +14,7 @@ You come to still in the plane buckled to your seat. You look around but no one 
 
 Instructions: 
 Commands:
-1. cd Lark-25-Group
-2. change the permission using chmod +x to access the Menu 
-3. Open the Menu 
-4. After the introduction, type ls
+1. Go back to the home directory 
+2. Type in chmod -vR u+x Stranded-Lark-25-Group (chmod -vR u+x will change the premission access for all files)
+3. Go back to the Stranded-Lark-25-Group directory
+4. Type in cat README.md to see the instructions of the game
