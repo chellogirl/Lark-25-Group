@@ -1,0 +1,16 @@
+#!/bin/bash 
+echo "            _\ _~-\___
+    =  = ==(____AA____D
+                \_____\___________________,-~~~~~~~ -.._
+                /     o O o o o o O O o o o o o o O o  |\_
+                 ~-.__        ___..----..                  )
+                      `---~~\___________/------------`````
+                      =  ===(_________D " 
+sleep 1
+echo "There are ruins of the plane." 
+sleep 1
+echo "It's in bad shape. It's a miracle it hasn't blown up."
+sleep 3 
+echo "Maybe you shouldn't Jinx it though." 
+sleep 1 
+echo "Type cd Plane to go back inside the plane" 
