@@ -17,4 +17,4 @@ Commands:
 1. Go back to the home directory 
 2. Type in chmod -vR u+x Stranded-Lark-25-Group (chmod -vR u+x will change the premission access for all files)
 3. Go back to the Stranded-Lark-25-Group directory
-4. Type in cat README.md to see the instructions of the game
+4. Type ./Menu to start the menu & play the game!
