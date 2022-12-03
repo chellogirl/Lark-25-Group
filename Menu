@@ -24,7 +24,7 @@ function resetVar()
         
 }
 currPath=$(pwd)
-$PWD=Stranded_Lark_25/Plane
+$PWD=Stranded_Lark_25
 
 # save screen
 ---Replace me-------
