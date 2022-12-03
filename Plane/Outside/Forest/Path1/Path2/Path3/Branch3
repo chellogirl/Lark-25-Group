@@ -1,6 +1,6 @@
 # !/bin/bash
 
-Echo "This is a branch." 
+  echo "This is a branch." 
   read -p "Do you want pick this up? y/n  " choice
   case "$choice" in
   n|no|No|N)
@@ -26,4 +26,4 @@ Echo "This is a branch."
 
   type "echo \"Branch \" >> Inventory"
   rm Branch
-esac
+  esac
