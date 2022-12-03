@@ -24,7 +24,7 @@ function resetVar()
         
 }
 currPath=$(pwd)
-$PWD=Lark-25-Group/Plane
+$PWD=Stranded_Lark_25
 
 # save screen
 ---Replace me-------
@@ -61,7 +61,7 @@ read -p "Enter selection [0-2} > " selection
                echo -e $userName \n > ./currentPlayer.dat
                new=true
             fi
-                ./GameStart.sh
+                ./GameStart
                 cd $PWD
             ;;
         2)  if [ new ]
@@ -71,7 +71,7 @@ read -p "Enter selection [0-2} > " selection
             fi
             # run start up script
               echo -e  "Lark is starting now $userName\n";sleep 1
-              /.GameStart
+               ./GameStart
                cd $PWD
             break
             ;;
