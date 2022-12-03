@@ -1,7 +1,11 @@
 #!/bin/bash
 
 echo "This is an Engine from your plane" 
+sleep 1
 echo "It remains mostly intact. Probably since it was the plane's wings that got hit and not the engine."
+sleep 1
 echo "Still it's a little surprising it wasn't damaged during the crash"
+sleep 1
 echo "It might be useful in the future. Maybe you should take it with you? 
+sleep 1
 echo " type echo \"Parts_1\" >> Inventory to add the Engine to you're Inventory."
