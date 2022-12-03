@@ -24,7 +24,7 @@ function resetVar()
         
 }
 currPath=$(pwd)
-$PWD=Stranded_Lark_25
+$PWD=Stranded_Lark_25/Plane
 
 # save screen
 ---Replace me-------
@@ -61,8 +61,9 @@ read -p "Enter selection [0-2} > " selection
                echo -e $userName \n > ./currentPlayer.dat
                new=true
             fi
-                ./GameStart
+                
                 cd $PWD
+                ./GameStart
             ;;
         2)  if [ new ]
                then resetVar # resets game variables and settings
@@ -71,8 +72,9 @@ read -p "Enter selection [0-2} > " selection
             fi
             # run start up script
               echo -e  "Lark is starting now $userName\n";sleep 1
-               ./GameStart
+          
                cd $PWD
+               ./GameStart
             break
             ;;
         0)  break
