@@ -63,7 +63,7 @@ read -p "Enter selection [0-2} > " selection
             fi
                 
                 cd $PWD
-                ./GameStart
+                cat GameStart
             ;;
         2)  if [ new ]
                then resetVar # resets game variables and settings
@@ -74,7 +74,7 @@ read -p "Enter selection [0-2} > " selection
               echo -e  "Lark is starting now $userName\n";sleep 1
           
                cd $PWD
-               ./GameStart
+               cat GameStart
             break
             ;;
         0)  break
