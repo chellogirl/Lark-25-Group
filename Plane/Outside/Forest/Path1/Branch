@@ -1,12 +1,14 @@
 # !/bin/bash
 
   echo "This is a branch." 
-  read -p "Do you want pick this up? y/n  " choice
+  read -p "Do you want pick this up?  
+  1.yes
+  2.no " choice
   case "$choice" in
-  n|no|No|N)
+  2)
   echo "You leave the branch"
   ;;
-  y|yes|Yes|Y)
+  1)
   echo "
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -24,6 +26,9 @@
 ⠀⠀⠘⢿⣿⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 
-  type "echo \"Branch \" >> Inventory"
+  echo "type echo \"Branch \" >> Inventory to pick up the branch and add it to your inventory."
   rm Branch
+  ;;
+  *)
+  echo "Please type a number" 
   esac
