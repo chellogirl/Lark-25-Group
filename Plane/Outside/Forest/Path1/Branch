@@ -27,7 +27,7 @@
   ;;
   1)
 
-  echo "type echo \"Branch \" >> Inventory to pick up the branch and add it to your inventory."
+  echo "type echo \"Branch\" >> Inventory to pick up the branch and add it to your inventory."
   rm Branch
   ;;
   *)
