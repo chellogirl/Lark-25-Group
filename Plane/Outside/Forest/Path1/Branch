@@ -1,9 +1,10 @@
 # !/bin/bash
 
-  echo "This is a branch." 
+  echo "This is a branch."
+  sleep 1
   read -p "Do you want pick this up?  
-  1.yes
-  2.no " choice
+  1.Yes
+  2.No " choice
   case "$choice" in
   2)
   echo "You leave the branch"
