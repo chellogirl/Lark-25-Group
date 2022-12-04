@@ -14,8 +14,12 @@
 ⠀⠀⠀⠀⠙⠿⠿⠀⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠀⠿⠿⠋⠀⠀⠀⠀"
 
   echo "This is your luggage."
+  sleep 1
   echo "Maybe there could be something useful in here?"
-  read -p "Do you want to open your luggage? y/n  " choice
+  sleep 1
+  read -p "Do you want to open your luggage? 
+  1. yes
+  2. no " choice
   case "$choice" in
   n|no|No|N)
   echo "You dont open the luggage"
@@ -24,5 +28,7 @@
   echo "You open your luggage. You find a pocket knife."
   echo " type echo \"Pocket Knife\" >> Inventory to pick up the knife"
   rm luggage2
-  
+  *) 
+  echo "Please enter a number."
+  ;;  
 esac
