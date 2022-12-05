@@ -34,7 +34,7 @@ sleep 1
 echo " Thats right! HO HO HO! We are STRANDED!" 
 sleep 1
 echo "We need to find a way off this island but, lets start with finding something to eat."
-sleep 
+sleep 1
 echo "I suggest starting with looking the forest."
 sleep 1
 echo "Should you need any assistance I'll be here" 
