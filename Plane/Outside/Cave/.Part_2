@@ -3,4 +3,4 @@ echo "This looks like a part. For a "
 sleep 1
 echo "Where on earth did this bear get this from??" 
 sleep 1
-echo "This may be important later. Type \"echo Parts_2\" > Inventory "
+echo "This may be important later. Type "echo Parts_2 > Inventory "
