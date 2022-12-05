@@ -29,19 +29,29 @@ read -p "What can I help you with?
 case "$i" in
 1)
 echo "I'm Starving!! T_T"
-echo "There is food in the forest."
+sleep 1
+echo "You should look for something to eat in the forest."
 ;;
 2)
-echo "To fight the bear and rabbit, you must craft a knife and spear"
-echo "The cave require you to craft a torch"
+echo "There are all sorts of things you can make using objects you find."
+sleep 1
+echo "Come to the plane if you want to make something."
 ;;
 3)
-echo
-echo
+echo "Your Inventory starts in the plane but if you want to use it else where you'll have to copy your inventory to that location"
+sleep 1
+echo "To do this, just type cp Inventory location (location being the last location that you updated your Inventory in."
+sleep 1 
+echo "You'll have to do this before doing an action that requires your inventory ex: fighting or crafting."
+sleep 1
+echo "If you make any changes to you're Inventory be sure to cp your Inventory to that location. "
 ;;
 4)
-echo 
-echo
+echo "I tried going to that cave earlier but, I couldn't see a thing!"
+sleep 1
+echo "We should try making a torch and try again."
+sleep 1
+echo "Come here once you've got a sturdy branch and made a fire and type ./craft" 
 ;;
 5)
 echo 
