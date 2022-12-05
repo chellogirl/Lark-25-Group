@@ -79,7 +79,7 @@ echo "
 ╚═╗║ ║║  ║  ║╣ ╚═╗╚═╗│
 ╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝o "
 echo "You've defeated the bear!"
-echo "You can now enter the cave."
+echo "Look around to find the hidden item."
 cp .Parts_2 Parts_2
 else
 echo ""
