@@ -29,8 +29,26 @@ read -p "What can I help you with?
 case "$i" in
 1)
 echo "I'm Starving!! T_T"
-echo "There is food in the forest"
+echo "There is food in the forest."
 ;;
 2)
-echo "
+echo "To fight the bear and rabbit, you must craft a knife and spear"
+echo "The cave require you to craft a torch"
+;;
+3)
+echo
+echo
+;;
+4)
+echo 
+echo
+;;
+5)
+echo 
+echo
+;;
+6)
+echo 
+echo 
+;;
 esac
