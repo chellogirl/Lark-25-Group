@@ -1,8 +1,8 @@
 #!/bin/bash
 # Test if they have a torch, if they dont, display this text    
 
-if [[ echo Inventory | grep torch ]] 
-echo "You have gather the material to make a torch"
+if grep -q "Torch" Inventory; [ $? -eq 0 ]
+then
 echo "            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣀⣀⣤⣴⡞⠀⠀⣀⣴⣿⠀⠀
@@ -17,13 +17,17 @@ echo "            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀�
 ⠀⠀⠀⠀⢠⣾⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⢀⣴⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠠⣿⣿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠉⠁⠀"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-
-echo "You can enter the cave now"
-
+⠀⠀⠉⠁⠀"
+echo "You lit up the cave using your torch."⠀⠀⠀
+sleep 1⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+echo "You can now see objects that were not visible"
+cp .Bear Bear
 else 
-echo -e "Cave is completely pitch black.\n"
-echo -e "Maybe it's better to return when you have obtain a light source.\n"
-echo -e "The player needs a torch to access the cave. The torch can be made by a sturdy branch and fire.\n"
+echo "Cave is completely pitch black."
+sleep 1
+echo "Maybe it's better to return when you have obtain a light source."
+sleep 1
+echo "(You should try making a torch)."
+sleep
 fi
-# The player will not be able to enter the cave until they have a torch (to create a torch they need a "sturdy branch" and "fire")
+
