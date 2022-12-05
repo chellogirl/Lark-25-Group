@@ -59,6 +59,19 @@ echo "You attacked the bear using the knife.It lost 10 HP."
 else
 echo "You do not have a knife."
 fi
+
+if [ $LP -gt 0 ]
+then
+echo "
+╔═╗╦ ╦╔═╗╔═╗╔═╗╔═╗╔═╗┬
+╚═╗║ ║║  ║  ║╣ ╚═╗╚═╗│
+╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝o "
+echo "You've defeated the bear!"
+echo "You can now enter the cave."
+cp .Parts_2 Parts_2
+else 
+echo " "
+fi
 ;;
 *)
 echo "Please enter a number corresponding to the weapon you want to use."
@@ -71,16 +84,7 @@ LP=$(( $LP - 15 ))
 fi
 done
 
-if [ $LP -gt 0 ]
-then
-echo "
-╔═╗╦ ╦╔═╗╔═╗╔═╗╔═╗╔═╗┬
-╚═╗║ ║║  ║  ║╣ ╚═╗╚═╗│
-╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝o "
-echo "You've defeated the bear!"
-echo "You can now enter the cave."
-cp .Parts_2 Parts_2
-fi
+
 
 
 #Add smth here allowing the to enter the cave
