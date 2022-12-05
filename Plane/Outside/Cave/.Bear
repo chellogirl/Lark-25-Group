@@ -60,18 +60,6 @@ else
 echo "You do not have a knife."
 fi
 
-if [ $LP -gt 0 ]
-then
-echo "
-╔═╗╦ ╦╔═╗╔═╗╔═╗╔═╗╔═╗┬
-╚═╗║ ║║  ║  ║╣ ╚═╗╚═╗│
-╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝o "
-echo "You've defeated the bear!"
-echo "You can now enter the cave."
-cp .Parts_2 Parts_2
-else 
-echo " "
-fi
 ;;
 *)
 echo "Please enter a number corresponding to the weapon you want to use."
