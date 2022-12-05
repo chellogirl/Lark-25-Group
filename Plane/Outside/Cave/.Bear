@@ -71,7 +71,7 @@ LP=$(( $LP - 15 ))
 fi
 done
 
-if [ $LP gt 0 ]
+if [ $LP -gt 0 ]
 then
 echo "
 ╔═╗╦ ╦╔═╗╔═╗╔═╗╔═╗╔═╗┬
