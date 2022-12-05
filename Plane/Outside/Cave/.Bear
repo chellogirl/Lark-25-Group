@@ -1,7 +1,5 @@
 # !/bin/bash
 
-# I still need to add in the requirement of the spear && the game over if they lose all their health
-
 echo "
        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⠶⣶⣴⣶⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⠀⠀⠀⢀⣀⣤⣤⣄⣄⣀⣸⣟⣾⡿⠛⠀⠀⠀⠀⠙⣿⣇⠀⠀⠀⠀⠀
