@@ -3,7 +3,7 @@
 
 ****The Linux Activity to Reinforce Knowledge****
 
-Name of game: ****Stranded****
+Name of game: ****STRANDED****
 
 Developed by: McKenzie Michael and Angelica Louis
 
