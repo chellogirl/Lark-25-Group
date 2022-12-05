@@ -54,11 +54,15 @@ sleep 1
 echo "Come here once you've got a sturdy branch and made a fire and type ./craft" 
 ;;
 5)
-echo 
-echo
+echo "Bear!? Where??"
+sleep 1
+echo "I didn't see a bear while I was exploring earlier..."
+sleep 1
+echo "If you do see one though. You shouldn't try to fight it without a spear."
+sleep 1
+echo "You can use a sturdy branch and your knife to make one." 
 ;;
 6)
-echo 
-echo 
+echo "No problemo!"
 ;;
 esac
