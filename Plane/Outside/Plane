@@ -13,4 +13,4 @@ echo "It's in terrible shape. Now that you're looking from the outside it's in w
 sleep 3 
 echo "Maybe you shouldn't Jinx it though." 
 sleep 1 
-echo "Type cd ~/Plane to go back inside the plane" 
+echo "Use pwd to see you're current location and to go back inside the plane use cd to the previous path." 
