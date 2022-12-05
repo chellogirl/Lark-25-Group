@@ -21,10 +21,10 @@
   1. yes
   2. no " choice
   case "$choice" in
-  n|no|No|N)
+  2)
   echo "You dont open the luggage"
   ;;
-  y|yes|Yes|Y)
+  1)
   echo "You open your luggage. You find a pocket knife."
   echo " type echo \"Pocket Knife\" >> Inventory to pick up the knife"
   rm luggage2
