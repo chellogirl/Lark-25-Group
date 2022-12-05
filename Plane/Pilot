@@ -34,8 +34,8 @@ echo "I suggest starting with looking the forest."
 sleep 1
 echo "Should you need any assistance I'll be here" 
 
-rm pilot 
-cp .pilot pilot
+rm Pilot 
+cp .pilot Pilot
 rm .pilot
 
 
