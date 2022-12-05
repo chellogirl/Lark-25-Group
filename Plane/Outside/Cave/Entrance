@@ -19,9 +19,13 @@ echo "            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀�
 ⠀⠠⣿⣿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠉⠁⠀"
 echo "You lit up the cave using your torch."⠀⠀⠀
-sleep 1⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-echo "You can now see objects that were not visible"
 cp .Bear Bear
+sleep 1⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+echo "You can now see objects that were not visible."
+sleep 1
+echo "There is a bear in the cave. That seems to be blocking the path to a shiny object."
+echo "It doesn't seem hostile for now, but to get the object you'll have to fight it..."
+echo "You'll need something stronger then your knife to defeat it." 
 else 
 echo "Cave is completely pitch black."
 sleep 1
