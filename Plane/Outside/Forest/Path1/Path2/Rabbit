@@ -11,7 +11,7 @@ ehco "
        .         )
     ,_/   ,    \/\_
     \_|    )_-\ \_-`
-       `-----` `--`  "
+       `-----   --`  "
 echo "A rabbit has appeared!"           
 
 LP=100
@@ -54,4 +54,4 @@ echo "
 echo "You've defeated the rabbit!" 
 echo "The Rabbit dropped Raw Meat!" 
 echo "Type echo \"Raw Meat\" > Inventory "
-rm rabbit
+rm Rabbit
