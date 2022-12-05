@@ -20,9 +20,14 @@ echo "
 
 
 read -p "What can I help you with?
-1.  " i
+1. Food
+2. Crafting
+3. Inventory
+4. Cave
+5. Bear
+6. Nevermind " i
 case "$i" in
-
 1)
-echo ""
+echo "I'm Starving!! T_T"
 ;;
+esac
