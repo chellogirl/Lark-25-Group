@@ -65,4 +65,7 @@ echo "You can use a sturdy branch and your knife to make one."
 6)
 echo "No problemo!"
 ;;
+*)
+"Please enter a number."
+;;
 esac
