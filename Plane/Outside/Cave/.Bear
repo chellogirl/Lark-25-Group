@@ -72,7 +72,15 @@ LP=$(( $LP - 15 ))
 fi
 done
 
-
-
-
-#Add smth here allowing the to enter the cave
+if [ $LP -gt 0 ]
+then
+echo "
+╔═╗╦ ╦╔═╗╔═╗╔═╗╔═╗╔═╗┬
+╚═╗║ ║║  ║  ║╣ ╚═╗╚═╗│
+╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝╚═╝o "
+echo "You've defeated the bear!"
+echo "You can now enter the cave."
+cp .Parts_2 Parts_2
+else
+echo ""
+fi
