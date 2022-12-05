@@ -1,6 +1,10 @@
 #!/bin/bash
 
+
 #Test if this is the first time they've talked, if it is display this.... 
+i=0 
+while [ $i -eq 0 ]
+do
 echo "
         _.---._
      .- ((O))  -.
@@ -26,11 +30,7 @@ echo "I've taken the liberty of looking around a but, it seems this island is co
 echo " Thats right! HO HO HO! We are STRANDED!" 
 echo "We need to find a way off this island but, lets start with finding something to eat."
 echo "I suggest looking looking the forest."
-
-#Test they have a rabbit AND fire, if they do display this: 
-#echo "You've got a rabbit!" 
-#echo "And we've made a fire" 
-#echo "Now we can cook this and not starve."
-#make a food file that if they interact with it they can eat, if they dont eat once in the game they starve even if they make the boat
+i=$(( $i + 1 ))
+done
 
 
