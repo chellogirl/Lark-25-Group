@@ -29,5 +29,8 @@ read -p "What can I help you with?
 case "$i" in
 1)
 echo "I'm Starving!! T_T"
+echo "There is food in the forest"
 ;;
+2)
+echo "
 esac
