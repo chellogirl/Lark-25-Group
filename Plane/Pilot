@@ -1,10 +1,5 @@
 #!/bin/bash
 
-
-#Test if this is the first time they've talked, if it is display this.... 
-i=0 
-while [ $i -eq 0 ]
-do
 echo "
         _.---._
      .- ((O))  -.
@@ -38,12 +33,9 @@ sleep 1
 echo "I suggest starting with looking the forest."
 sleep 1
 echo "Should you need any assistance I'll be here" 
-i=$(( $i + 1 ))
-done
 
-#case 
-
-
-
+rm pilot 
+cp .pilot pilot
+rm .pilot
 
 
