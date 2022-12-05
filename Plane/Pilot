@@ -24,12 +24,19 @@ echo "
     /)_/   |    |  "
 
 echo "So you're awake... "
+sleep 1
 echo "You must be distressed but worry not!" 
+sleep 1
 echo "We were struck by lighting and one of the plane's wings was hit. Causing us to crash!!"
+sleep 1
 echo "I've taken the liberty of looking around a but, it seems this island is completely deserted." 
+sleep 1
 echo " Thats right! HO HO HO! We are STRANDED!" 
+sleep 1
 echo "We need to find a way off this island but, lets start with finding something to eat."
+sleep 
 echo "I suggest starting with looking the forest."
+sleep 1
 echo "Should you need any assistance I'll be here" 
 i=$(( $i + 1 ))
 done
