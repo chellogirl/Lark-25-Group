@@ -1,6 +1,6 @@
 # !/bin/bash
-echo "This looks like a part. For a "
+echo "This looks like a part. "
 sleep 1
 echo "Where on earth did this bear get this from??" 
 sleep 1
-echo "This may be important later. Type "echo Parts_2 > Inventory "
+echo "This may be important later. Type "echo \"Parts_2\" > Inventory to add it to your Inventory."
