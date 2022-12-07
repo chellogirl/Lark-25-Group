@@ -27,7 +27,7 @@
   1)
   echo "You open your luggage. You find a pocket knife."
   echo "type echo \"Pocket Knife\" >> Inventory to pick up the knife"
-  rm luggage
+  rm Luggage
   ;;
   *) 
   echo "Please enter a number."
